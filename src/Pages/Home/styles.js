@@ -67,7 +67,7 @@ export const Card = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 2em;
+  border-radius: 1em;
   div {
     display: grid;
     grid-gap: 10px;
@@ -108,26 +108,24 @@ export const Img = styled.span`
   position: relative;
   display: flex;
   color: #fff;
-  background-image: linear-gradient(
-    to top,
-    #281ac8,
-    #9207b8,
-    #c624a9,
-    #e74c9e,
-    #fd749b
-  );
-  border-radius: 2em;
-  padding: 2px;
+  border: 2px solid;
+  border-image: linear-gradient(
+      to top,
+      #281ac8,
+      #9207b8,
+      #c624a9,
+      #e74c9e,
+      #fd749b
+    )
+    1;
   a {
     color: #fff;
   }
   img {
     width: 100%;
-    border-radius: 2em;
   }
 
   span {
-    border-radius: 2em;
     position: absolute;
     top: 0;
     bottom: 0;
