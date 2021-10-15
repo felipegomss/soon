@@ -32,7 +32,7 @@ export const Wave = styled.div`
     bottom: 0;
     right: 0;
     left: 0;
-    transform: translateY(250px);
+    transform: translateY(23vw);
   }
 `;
 export const Icon = styled.div`
@@ -43,5 +43,14 @@ export const Icon = styled.div`
 
   @media (min-width: 760px) {
     width: 50%;
+  }
+`;
+
+export const Text = styled.div`
+  width: 100%;
+
+  @media (min-width: 760px) {
+    width: 90%;
+    padding-left: 5em;
   }
 `;

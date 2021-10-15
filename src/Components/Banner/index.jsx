@@ -1,10 +1,10 @@
-import { Container, Content, Wave, Icon } from "./styles";
+import { Container, Content, Wave, Icon, Text } from "./styles";
 
 function Banner() {
   return (
     <Container>
       <Content>
-        <Icon>
+        <Text>
           <h3>
             Aqui está a solução de <b>vendas para seu negócio!</b>
           </h3>
@@ -14,9 +14,9 @@ function Banner() {
             dolorem neque saepe eligendi ullam tempore recusandae at praesentium
             distinctio quo laboriosam cumque.
           </p>
-        </Icon>
+        </Text>
         <Icon>
-          <img src="/assets/banner_img.png" alt="" />
+          <img src="/assets/banner.png" alt="" />
         </Icon>
       </Content>
       <Wave>

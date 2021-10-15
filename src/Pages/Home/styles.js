@@ -21,6 +21,25 @@ export const Content = styled.div`
   width: 90%;
   display: flex;
   flex-direction: column;
+  h1::after {
+    content: "";
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100px;
+    height: 2px;
+    display: flex;
+    margin-bottom: 0.5em;
+
+    background-image: linear-gradient(
+      to top,
+      #281ac8,
+      #9207b8,
+      #c624a9,
+      #e74c9e,
+      #fd749b
+    );
+  }
   img {
     width: 100%;
   }
@@ -41,7 +60,8 @@ export const About = styled.div`
 
 export const Card = styled.div`
   width: 80%;
-  background-color: #e3e3e3;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 2em;
   display: flex;
   flex-direction: column;
@@ -85,6 +105,7 @@ export const Card = styled.div`
 export const Img = styled.span`
   width: 90%;
   position: relative;
+  display: flex;
   color: #fff;
   a {
     color: #fff;
@@ -125,9 +146,10 @@ export const Img = styled.span`
     }
 
     h4 {
-      transition: 0.2s;
-      transform: translateY(1em);
+      transition: 0.3s;
+      transform: translateY(5em);
       margin: 0;
+      font-size: 3em;
     }
 
     span {
@@ -141,7 +163,7 @@ export const Img = styled.span`
       );
       visibility: hidden;
       opacity: 0;
-      transition: opacity 0.2s, visibility 0.2s;
+      transition: opacity 0.2s, visibility 0.5s;
       padding: 0;
       justify-content: center;
     }
