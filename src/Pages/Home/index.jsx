@@ -68,7 +68,7 @@ function Home() {
                   <h4>@gottlich.art</h4>
                 </a>
 
-                <p>Designer</p>
+                <p>Art Designer | Marketing</p>
               </span>
             </Img>
           </div>

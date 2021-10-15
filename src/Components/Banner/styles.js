@@ -6,7 +6,7 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.div`
-  padding: 0 1em;
+  padding: 3em 1em;
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;

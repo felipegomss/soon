@@ -32,7 +32,7 @@ export const Content = styled.div`
     margin-bottom: 0.5em;
 
     background-image: linear-gradient(
-      to top,
+      to righ,
       #281ac8,
       #9207b8,
       #c624a9,
@@ -67,6 +67,7 @@ export const Card = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 2em;
   div {
     display: grid;
     grid-gap: 10px;
@@ -87,7 +88,7 @@ export const Card = styled.div`
     display: flex;
 
     background-image: linear-gradient(
-      to top,
+      to right,
       #281ac8,
       #9207b8,
       #c624a9,
@@ -107,21 +108,33 @@ export const Img = styled.span`
   position: relative;
   display: flex;
   color: #fff;
+  background-image: linear-gradient(
+    to top,
+    #281ac8,
+    #9207b8,
+    #c624a9,
+    #e74c9e,
+    #fd749b
+  );
+  border-radius: 2em;
+  padding: 2px;
   a {
     color: #fff;
   }
   img {
     width: 100%;
+    border-radius: 2em;
   }
 
   span {
+    border-radius: 2em;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     visibility: visible;
-    opacity: 0.6;
+    opacity: 0.8;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -149,7 +162,7 @@ export const Img = styled.span`
       transition: 0.3s;
       transform: translateY(5em);
       margin: 0;
-      font-size: 3em;
+      font-size: 2em;
     }
 
     span {
