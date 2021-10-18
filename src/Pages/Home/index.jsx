@@ -26,7 +26,7 @@ function Home() {
           </p>
         </Content>
       </Welcome>
-      <About>
+      <About id="quem-somos">
         <Card>
           <h3>Nossa Equipe</h3>
           <div>

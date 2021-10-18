@@ -30,9 +30,8 @@ export const Content = styled.div`
     height: 2px;
     display: flex;
     margin-bottom: 0.5em;
-
     background-image: linear-gradient(
-      to righ,
+      to right,
       #281ac8,
       #9207b8,
       #c624a9,

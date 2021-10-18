@@ -1,4 +1,13 @@
-import { Container, Links, Button, MobileLinks, Nav, Linka } from "./styles";
+import {
+  Container,
+  Links,
+  Button,
+  MobileLinks,
+  Nav,
+  LinkNav,
+  LinksNav,
+  HaskLink,
+} from "./styles";
 
 import { CgMenuCheese } from "react-icons/cg";
 import { useState } from "react";
@@ -13,7 +22,7 @@ function Header() {
     if (toggle === false) {
       setToggle(true);
       setShow({
-        display: "flex",
+        display: "grid",
       });
     } else {
       setShow({
@@ -26,24 +35,35 @@ function Header() {
   return (
     <Nav>
       <Container>
-        <h1>Lorem</h1>
+        <a href="/">
+          <h1>Lorem</h1>
+        </a>
         <Links>
-          <Linka to="/">Home</Linka>
-          <Linka to="/">Quem somos</Linka>
-          <Linka to="/">Contato</Linka>
-          <Linka to="/">Junte-se a nós</Linka>
+          <LinkNav to="/">Home</LinkNav>
+          <HaskLink href="/#quem-somos">Quem somos</HaskLink>
+          <LinkNav to="/contato">Contato</LinkNav>
+          <LinkNav to="/junte-se">Junte-se a nós</LinkNav>
         </Links>
         <Button onClick={showMenu}>
           <CgMenuCheese />
         </Button>
       </Container>
       <MobileLinks style={show}>
-        <div>
-          <Linka to="/">Home</Linka>
-          <Linka to="/">Quem somos</Linka>
-          <Linka to="/">Contato</Linka>
-          <Linka to="/">Junte-se a nós</Linka>
-        </div>
+        <LinksNav>
+          <LinkNav to="/" onClick={showMenu}>
+            Home
+          </LinkNav>
+          <HaskLink href="/#quem-somos" onClick={showMenu}>
+            Quem somos
+          </HaskLink>
+          <LinkNav to="/contato" onClick={showMenu}>
+            Contato
+          </LinkNav>
+          <LinkNav to="/junte-se" onClick={showMenu}>
+            Junte-se a nós
+          </LinkNav>
+        </LinksNav>
+        <div></div>
       </MobileLinks>
     </Nav>
   );
